@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: discovery
+
+server:
+  port: ${DISCOVERY_PORT}
+
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    max-threads-for-peer-replication: 0
